@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BurguerBot - Burger Mania</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="chat-container">
+    <div id="chatbox">
+      <div class="message bot">
+        <div class="bubble">
+          👋 Olá! Bem-vindo à <strong>Burger Mania</strong>! Como posso te ajudar?<br><br>
+          Digite:<br>
+          <strong>1</strong> - Ver Cardápio<br>
+          <strong>2</strong> - Fazer Pedido<br>
+          <strong>3</strong> - Horário/Localização<br>
+          <strong>4</strong> - Falar com atendente
+        </div>
+      </div>
+    </div>
+    <input type="text" id="userInput" placeholder="Digite sua mensagem..." onkeydown="if(event.key === 'Enter') sendMessage()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
